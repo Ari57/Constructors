@@ -26,7 +26,7 @@ public class Bank {
         System.out.println("Your current balance is £" + this.balance + "0");
     }
     public void withdrawFunds (double withdraw) {
-        if (withdraw > this.balance) {
+        if (this.balance < 0) {
             System.out.println("You do not have enough money to withdraw £" + withdraw + "0");
             System.out.println("Your current balance is £" + this.balance + "0");
         } else {
